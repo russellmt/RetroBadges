@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/constants.js"></script>
+    <script type="text/javascript" src="/inheritance.js"></script>
+    <script type="text/javascript" src="/xhr/request_maker.js"></script>
+    <script type="text/javascript" src="/xhr/game_request_maker.js"></script>
+    <script type="text/javascript" src="/page/create_game.js"></script>
+    <title>Add Game</title>
+</head>
+<body>
+    <h1>Add Game</h1>
+    <form onsubmit="handleSubmit(event)">
+        <fieldset>
+            <legend>Input game info</legend>
+            <label>
+                Title:
+                <input name="title" type="text" placeholder="Enter game title" required />
+                <br />
+                Genre:
+                <select name="genre" required><!-- populate from db in the future -->
+                    <option selected disabled hidden>Select genre</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Platform</option>
+                    <option>Fighting</option>
+                    <option>Sandbox</option>
+                </select>
+                <br />
+                Year:
+                <input name="year" type="number" min="1970" required />
+                <br />
+                Publisher:<!-- allow this to be populated by publishers from db in the future -->
+                <input name="publisher" type="text" placeholder="Enter publisher" required />
+                <br />
+                Developer:
+                <input name="developer" type="text" placeholder="Enter developer" required />
+                <br />
+                Platform:<!-- add device for entering multiple platforms -->
+                <input name="platforms" type="text" placeholder="Enter platform" required />
+                <br />
+                <input type="submit" value="Create Game" />
+            </label>
+
+        </fieldset>
+    </form>
+</body>
+</html>

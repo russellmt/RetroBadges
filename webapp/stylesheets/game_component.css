@@ -1,0 +1,35 @@
+.game-component {
+    background-color: #87b1ff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.game-component h3 {
+    margin: 5px;
+    display: inline-block;
+}
+
+.game-meta {
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.show-badges {
+    background-color: #deb3ff;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.show-badges .show-badges-title:hover {
+    color: blue;
+    font-weight: 100;
+    cursor: pointer;
+}
